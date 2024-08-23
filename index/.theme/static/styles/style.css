@@ -1,0 +1,125 @@
+
+@font-face {
+    font-family: "Futura PT";
+    src: url("../fonts/FuturaPT-Light.ttf") format("truetype");
+}
+:root {
+    font-family: "Futura PT", "NerdFontsSymbols Nerd Font";
+    font-size: 32px;
+    font-weight: 600;
+}
+body {
+    margin: 0;
+    background-image: url("../images/background2.png");
+    text-align: center;
+    background-color: black;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+h1 {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+pre {
+    line-height: 2em;
+    background: none;
+    backdrop-filter: blur(15px);
+    background-color: rgba(0,0,0,0.3);
+    width: 80%;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 15px;
+    overflow: auto;
+}
+hr {
+    display: none;
+}
+a {
+    background: none;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+    transition: backdrop-filter 200ms;
+    transition: background-color 200ms;
+}
+a:hover {
+    transition: background-color 200ms;
+    transition: backdrop-filter 200ms;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255,255,255,0.1);
+}
+pre a[href$="../"] {
+    font-family: "monospace";
+    transition: background-color 200ms;
+    transition: backdrop-filter 200ms;
+    padding: 15px;
+    border-radius: 15px;
+}
+pre a[href$="../"]:before {
+    content: "";
+}
+pre a[href$="../"]:hover {
+    transition: background-color 200ms;
+    transition: backdrop-filter 200ms;
+    backdrop-filter: blur(15px);
+    background-color: rgba(255,255,255,0.1);
+}
+a[href]:before {
+    content: " ";
+    font-family: "NerdFontsSymbols Nerd Font";
+}
+
+a[href$="/"]:before {
+    content: " ";
+    font-family: "NerdFontsSymbols Nerd Font";
+}
+
+/* Checksums */
+
+a[href$=".md5"]:before {
+    content: " ";
+    font-family: "NerdFontsSymbols Nerd Font";
+}
+
+/* Images */
+
+a[href$=".jpg"]:before {
+    content: " ";
+    font-family: "NerdFontsSymbols Nerd Font";
+}
+
+/* Compression */
+
+a[href$=".bz2"]:before {
+    content: " ";
+    font-family: "NerdFontsSymbols Nerd Font";
+}
+
+a[href$=".gz"]:before {
+    content: " ";
+    font-family: "NerdFontsSymbols Nerd Font";
+}
+
+a[href$=".tar.gz"]:before {
+    content: " ";
+    font-family: "NerdFontsSymbols Nerd Font";
+}
+
+/* Debian */
+
+a[href$=".deb"]:before {
+    content: "󰏗 ";
+    font-family: "NerdFontsSymbols Nerd Font";
+}
+
+/* Crypt */
+
+a[href$=".gpg"]:before {
+    content: " ";
+    font-family: "NerdFontsSymbols Nerd Font";
+}
+
