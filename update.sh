@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 if [ -f ./check ]; then
-  git add . --all
-  git add .gitattributes
+  git add check ./*.js ./*.html ./*.md ./*.ico ./*.sh ./check ./static ./index/.theme --all
   echo "Enter commit name (enter to default)"
   read name
   if [ -n "$name" ]; then
