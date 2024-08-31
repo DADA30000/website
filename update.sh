@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 if [ -f ./check ]; then
   git add --all
+  git add index/
   git add .gitignore
   echo "Enter commit name (enter to default)"
   read name
