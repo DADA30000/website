@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 if [ -f ./check ]; then
-  git add --all
+  git add . --all
   echo "Enter commit name (enter to default)"
   read name
   if [ -n "$name" ]; then
